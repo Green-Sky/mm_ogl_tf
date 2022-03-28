@@ -13,7 +13,7 @@ compile_commands.json
 .clangd
 .cache
 
-build/
+/build*
 
 .DS_Store
 .AppleDouble

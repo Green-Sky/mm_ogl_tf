@@ -21,7 +21,7 @@ bool setup(MM::Engine& engine, const char* argv_0) {
 	);
 	ENABLE_BAIL(engine.enableService<MM::Services::SDLService>());
 
-	sdl_ss.createGLWindow("OpenGL TransformFeedback Particles flow", 1280, 720);
+	sdl_ss.createGLWindow("OpenGL TransformFeedback Particles flow", 1280, 720, SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE);
 
 	engine.addService<MM::Services::FilesystemService>(argv_0, "mm_ogl_tf_flow");
 	ENABLE_BAIL(engine.enableService<MM::Services::FilesystemService>());
